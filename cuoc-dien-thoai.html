@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="Giatien"></p>
+</body>
+<script>
+     let a = parseInt(prompt(' số phút gọi :'));
+     /* từ 0 --5 phút giá 1000k
+     từ 5- 10 phút - 10p giá 1500k
+     từ 10 phút trở lên giá 2000k
+      */
+      var giatien;
+      if( a >0 && a <=5){
+          giatien = a*1000;
+      }
+      if (a >5 && a <=10 ){
+          giatien = a * 1500;
+      }
+      if(a >10 ){
+          giatien = a *2000;
+      }
+      document.getElementById('Giatien').innerHTML="giá cước điện thoại là :" + giatien ;
+</script>
+</html>

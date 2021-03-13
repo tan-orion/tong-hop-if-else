@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <lable for="age">Số Tuổi</lable>
+<input id="age" name="age" >
+<button type="button" onclick="tuoi()">Click</button>
+
+</body>
+<script>
+    function tuoi(){
+
+        var a = parseInt(document.getElementById('age').value)
+        if( a > 16){
+            alert("đủ điều kiện đi học lớp 10");
+        }
+        else{
+            alert("không đủ điều kiện học lớp 10");
+        }
+    }
+
+</script>
+</html>

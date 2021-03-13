@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="phanTram" ></p>
+</body>
+ <script>
+     var a= parseInt(prompt('nhập mức tiền A'));
+
+     var phanTram;
+ /*  Mức hoa hồng
+     0- 200k là được 3%
+     200-500 là được 5%
+     từ 500 là được 10%
+  */
+ if (a > 0 && a == 200){
+     phanTram = 200*0.03;
+ }
+ if(a >200 && a <= 500 ){
+     phanTram = ((200 + 500)/ 2) * 0.05;
+ }
+ if ( a > 500){
+     phanTram = 500 *0.1;
+ }
+
+document.getElementById('phanTram').innerHTML= "Phần Trăm Nhận được là :" + phanTram;
+
+
+ </script>
+</html>
